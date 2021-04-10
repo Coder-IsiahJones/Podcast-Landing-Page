@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Chivo", sans-serif;
+}
+
+body {
+  background: #121725;
+}
+
+.main-container {
+  position: absolute;
+  width: 1275px;
+  height: 640px;
+  right: 0;
+  top: 130px;
+}
+
+.pod-logo {
+  position: absolute;
+  top: -35px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.podcast-host {
+  position: absolute;
+  right: 0;
+}
+
+.text-container {
+  position: absolute;
+  width: 723px;
+  height: 509px;
+  left: -10px;
+  bottom: -10px;
+  background: #121725;
+}
+
+.hero-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 62px;
+  text-transform: uppercase;
+  color: #54e6af;
+  padding-top: 88px;
+}
+
+.hero-title span {
+  color: #ffffff;
+}
+
+.hero-title p {
+  color: #c2cbe5;
+  /* Style */
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 515px;
+}
+
+.btn-group {
+  width: 427px;
+  height: 56px;
+  background: #2c344b;
+  border-radius: 60px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  text-align: center;
+}
+
+.txt-Email {
+  background: #2c344b;
+  position: absolute;
+  left: 32px;
+  top: 14px;
+  bottom: 14px;
+  border: 0;
+  color: #ffffff;
+}
+
+.txt-Email::placeholder {
+  /* Style */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.txt-Email:focus {
+  outline: none;
+  color: #ffffff;
+}
+
+.btn-Request {
+  /* Position */
+  background: #54e6af;
+  border: #54e6af;
+  border-radius: 28px;
+  width: 162px;
+  height: 46px;
+  position: absolute;
+  right: 5px;
+  left: 260px;
+  top: 5px;
+  bottom: 5px;
+  box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+  /* Style */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 28px;
+  color: #121725;
+}
+
+.btn-Request:hover {
+  background: #b3ffe2;
+  border-color: #b3ffe2;
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.icon-group img {
+  padding-right: 40.05px;
+}
+
+.dot-pattern {
+  position: absolute;
+  top: 718px;
+  right: 0;
+}
+
+.errorMessage {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fb3e3e;
+
+  padding-top: 8px;
+  padding-left: 32px;
+  padding-bottom: 71px;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 375) {
+}
