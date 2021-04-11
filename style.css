@@ -1,139 +1,152 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap");
-
 /* Reset */
 * {
-  margin: 0;
   padding: 0;
-  font-family: "Chivo", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;1,900&display=swap");
+
+:root {
+  --light-green: #54e6af;
+  --hover-green: #b3ffe2;
+  --dark-blue: #2c344b;
+  --background: #121725;
+  --white: #ffffff;
+  --light-gray: #5a668a;
+  --very-light-gray: #c2cbe5;
 }
 
 body {
-  background: #121725;
+  font-family: "Chivo", sans-serif;
+  background: var(--background);
 }
 
-.main-container {
-  position: absolute;
+.wrapper {
   width: 1275px;
   height: 640px;
-  right: 0;
-  top: 130px;
-}
-
-.pod-logo {
-  position: absolute;
-  top: -35px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.podcast-host {
+  display: flex;
   position: absolute;
   right: 0;
+  top: 135px;
 }
 
-.text-container {
-  position: absolute;
+.inner-container {
+  padding-top: 88px;
+  padding-right: 58px;
+}
+
+.main-content {
+  background: var(--background);
   width: 723px;
   height: 509px;
-  left: -10px;
-  bottom: -10px;
-  background: #121725;
-}
-
-.hero-title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 38px;
-  line-height: 62px;
-  text-transform: uppercase;
-  color: #54e6af;
-  padding-top: 88px;
-}
-
-.hero-title span {
-  color: #ffffff;
-}
-
-.hero-title p {
-  color: #c2cbe5;
-  /* Style */
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 300;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 515px;
-}
-
-.btn-group {
-  width: 427px;
-  height: 56px;
-  background: #2c344b;
-  border-radius: 60px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  text-align: center;
-}
-
-.txt-Email {
-  background: #2c344b;
   position: absolute;
-  left: 32px;
-  top: 14px;
-  bottom: 14px;
-  border: 0;
-  color: #ffffff;
+  bottom: 0;
+  z-index: 1;
 }
 
-.txt-Email::placeholder {
-  /* Style */
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
+.title-section h1 {
+  color: var(--light-green);
+}
+
+.title-section span {
+  color: var(--white);
+}
+
+.title-section p {
+  color: var(--very-light-gray);
+}
+
+.title-section {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.title-section p {
+  font-size: 1rem;
   line-height: 28px;
-  color: #ffffff;
+  width: 486px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.host-image {
+  background: url("./assets/desktop/image-host.jpg");
+  width: 888px;
+  height: 639px;
+  position: absolute;
+  right: 0;
+}
+
+.podcast-logo {
+  position: absolute;
+  top: 102px;
+  left: 165px;
+}
+
+.input-group {
+  background: #2c344b;
+  border-radius: 28px;
+  width: 480px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.txtEmail {
+  font-weight: bold;
+  margin-left: 32px;
+  margin-top: 14px;
+  width: 240px;
+  height: 28px;
+  border: none;
+  background: var(--dark-blue);
+  color: var(--white);
+}
+
+.txtEmail::placeholder {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--white);
   mix-blend-mode: normal;
   opacity: 0.5;
 }
 
-.txt-Email:focus {
+.txtEmail:focus {
   outline: none;
-  color: #ffffff;
+  font-weight: bold;
+  color: var(--white);
 }
 
-.btn-Request {
-  /* Position */
-  background: #54e6af;
-  border: #54e6af;
-  border-radius: 28px;
+.btnSubmit {
   width: 162px;
   height: 46px;
-  position: absolute;
-  right: 5px;
-  left: 260px;
-  top: 5px;
-  bottom: 5px;
-  box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
-  /* Style */
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
-  line-height: 28px;
-  color: #121725;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-top: 5px;
+  background: #54e6af;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+  border-radius: 28px;
 }
 
-.btn-Request:hover {
+.btnSubmit:hover {
   background: #b3ffe2;
   border-color: #b3ffe2;
 }
 
-.icon-group {
+.social {
   display: flex;
   align-items: center;
   position: absolute;
   bottom: 0;
 }
 
-.icon-group img {
-  padding-right: 40.05px;
+.social img {
+  padding-right: 40.5px;
 }
 
 .dot-pattern {
@@ -143,10 +156,7 @@ body {
 }
 
 .errorMessage {
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
-  line-height: 14px;
   color: #fb3e3e;
 
   padding-top: 8px;
@@ -154,8 +164,155 @@ body {
   padding-bottom: 71px;
 }
 
-@media (max-width: 768px) {
+/* Media Queries */
+@media screen and (max-width: 375px) {
+  .wrapper {
+    all: unset;
+  }
+
+  .main-content {
+    width: 327px !important;
+    height: 398px !important;
+    top: 175px;
+    right: 24px;
+    left: 24px;
+  }
+
+  .host-image {
+    display: none;
+  }
+
+  .podcast-logo {
+    width: 8rem;
+    top: 62px !important;
+    left: 102px !important;
+    right: 120.15px !important;
+  }
+
+  .inner-container {
+    padding-top: 0;
+    padding-right: 0;
+  }
+
+  p {
+    width: 332px !important;
+    text-align: center;
+  }
+
+  h1,
+  span {
+    text-align: center;
+    font-size: 24px !important;
+    line-height: 38px;
+  }
+
+  h1 {
+    padding-bottom: 16px;
+  }
+  .social {
+    all: unset;
+  }
+
+  .input-group {
+    width: 326px !important;
+    height: 46px;
+    position: absolute;
+    bottom: 35px;
+  }
+
+  .txtEmail {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: -5px;
+  }
+
+  .errorMessage {
+    position: absolute;
+    top: 288px;
+  }
+
+  .btnSubmit {
+    width: 326px;
+    height: 46px;
+    position: absolute;
+    bottom: -70px;
+  }
+
+  .social {
+    position: absolute;
+    top: 250px;
+  }
+
+  .social img {
+    padding: 0;
+    width: 78px;
+    padding-right: 1rem;
+  }
+
+  .dot-pattern {
+    display: none;
+  }
 }
 
-@media (max-width: 375) {
+@media screen and (max-width: 768px) {
+  .host-image {
+    background: url("./assets/tablet/image-host.jpg");
+    background-repeat: no-repeat;
+    width: 491px;
+    height: 767px;
+    left: 277px;
+    top: -258px;
+  }
+
+  .wrapper {
+    width: 635px;
+    height: 509px;
+    left: 39px;
+    top: 258px;
+  }
+
+  .main-content {
+    width: 635px;
+    height: 509px;
+  }
+
+  .podcast-logo {
+    top: 50px;
+    left: 39px;
+  }
+
+  .title-section h1 {
+    font-size: 2.6rem;
+  }
+
+  .title-section p {
+    font-size: 0.8rem;
+  }
+
+  .input-group {
+    width: 425px;
+  }
+
+  .txtEmail {
+    font-weight: none;
+    width: 200px;
+  }
+
+  .btnSubmit {
+    font-weight: none;
+  }
+
+  .dot-pattern {
+    width: 232px;
+    height: 104px;
+    left: 30px;
+    top: 920px;
+  }
 }
+
+/* @media screen and (max-width: 1920px) {
+}
+
+@media screen and (max-width: 1440px) {
+} */
+/* Other resolutions needed as well as landscape mode */

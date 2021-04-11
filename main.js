@@ -1,7 +1,7 @@
   //Variables
   const form = document.getElementById('form');
-  const email = document.getElementById('txtEmail').value;
-  const errorMessage = document.getElementById('error');
+  //   const email = document.getElementById('txtEmail').value;
+  const errorMessage = document.getElementById('errorMessage');
 
   //Email pattern
   const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
